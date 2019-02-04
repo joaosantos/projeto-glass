@@ -3,11 +3,34 @@ body {
     color: rgba(0, 0, 0, 1);
 }
 
+/* Delimitação do tamanho de interface, de sua posição e formatação */
+div#interface {
+    width: 950px;
+    background-color: #fff;
+    margin: -20px auto 0px auto;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, .5);
+    padding: 20px;
+    position: relative;
+}
+
 p {
     text-align: justify;
     text-indent: 50px;
 }
 
+/* Implementação da borda e do logo */
+header#cabecalho {
+    border-bottom: 1px solid #606060;
+    height: 150px;
+    background: url("../img/glass-logo-peq.jpg") no-repeat;
+}
+
+/* Posicionamento do Óculos Google Glass */
+header#cabecalho img#icone {
+    position: absolute;
+    left: 82%;
+    top: 90px;
+}
 /* Formatação de Imagens com Legendass */
 
 figure.foto-legenda {
@@ -48,8 +71,8 @@ nav#menu ul {
     list-style: none;
     text-transform: uppercase;
     position: absolute;
-    top: -20px;
-    left: 300px;
+    top: -10px;
+    left: 270px;
 }
 
 nav#menu li {
@@ -57,8 +80,25 @@ nav#menu li {
     background-color: #dddddd;
     padding: 10px;
     margin: 2px;
+    -o-transition: background-color 1s;
+    -moz-transition: background-color 1s;
+    -webkit-transition: background-color 1s;
+    transition: background-color 1s;
+}
+
+nav#menu li:hover {
+    background-color: #606060;
 }
 
 nav#menu h1 {
     display: none;
+}
+
+nav#menu a {
+    color: #000;
+    text-decoration: none;
+}
+
+nav#menu a:hover {
+    color: #fff;
 }
