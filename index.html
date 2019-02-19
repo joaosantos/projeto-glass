@@ -5,6 +5,11 @@
         <title>Tudo sobre Google Glass</title>
         <link rel="stylesheet" href="css/estilo.css">
     </head>
+    <script>
+        function mudaFoto(foto) {
+            document.getElementById("icone").src = foto;
+        }
+    </script>
     <body>
         <div id="interface">
             <header id="cabecalho">
@@ -15,14 +20,14 @@
                 
                 <img id="icone" src="img/glass-oculos-preto-peq.png" alt="Óculos Google Glass">
 
-                <nav id="menu">
+                <nav id="menu" onmouseout="mudaFoto('img/glass-oculos-preto-peq.png')">
                     <h1>Menu Principal</h1>
                     <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="specs.html">Especificações</a></li>
-                        <li><a href="fotos.html">Fotos</a></li>
-                        <li><a href="multimidia.html">Multimídia</a></li>
-                        <li><a href="fale-conosco.html">Fale conosco</a></li>
+                        <li onmouseover="mudaFoto('img/home.png')"><a href="index.html">Home</a></li>
+                        <li onmouseover="mudaFoto('img/especificacoes.png')"><a href="specs.html">Especificações</a></li>
+                        <li onmouseover="mudaFoto('img/fotos.png')"><a href="fotos.html">Fotos</a></li>
+                        <li onmouseover="mudaFoto('img/multimidia.png')"><a href="multimidia.html">Multimídia</a></li>
+                        <li onmouseover="mudaFoto('img/contato.png')"><a href="fale-conosco.html">Fale conosco</a></li>
                     </ul>
                 </nav>
             </header>
