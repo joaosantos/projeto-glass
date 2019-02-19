@@ -1,14 +1,32 @@
-Google Glass
-A revolução do Google está chegando
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <title>Tudo sobre Google Glass - Multimídia</title>
+        <link rel="stylesheet" href="css/estilo.css">
+    </head>
+    <script src="javascript/funcoes.js"></script>
+    <body>
+        <div id="interface">
+            <header id="cabecalho">
+                <hgroup>
+                    <h1>Google Glass</h1>
+                    <h2>A revolução do Google está chegando</h2>
+                </hgroup>
+                
+                <img id="icone" src="img/multimidia.png" alt="Óculos Google Glass">
 
-[AQUI ENTRA UMA FOTO]
-
-Menu Principal
-- Home
-- Especificações
-- Fotos
-- Multimídia
-- Fale conosco
+                <nav id="menu" onmouseout="mudaFoto('img/multimidia.png')">
+                    <h1>Menu Principal</h1>
+                    <ul>
+                        <li onmouseover="mudaFoto('img/home.png')"><a href="index.html">Home</a></li>
+                        <li onmouseover="mudaFoto('img/especificacoes.png')"><a href="specs.html">Especificações</a></li>
+                        <li onmouseover="mudaFoto('img/fotos.png')"><a href="fotos.html">Fotos</a></li>
+                        <li onmouseover="mudaFoto('img/multimidia.png')"><a href="multimidia.html">Multimídia</a></li>
+                        <li onmouseover="mudaFoto('img/contato.png')"><a href="fale-conosco.html">Fale conosco</a></li>
+                    </ul>
+                </nav>
+            </header>
 
 Glass > Multimídia
 Sons e Vídeos
@@ -21,5 +39,11 @@ Atualizado em 01/Maio/2013
 [AQUI ENTRA UM VÍDEO]
 [AQUI ENTRA UM ÁUDIO]
 
-Copyright 2013 - by Gustavo Guanabara
-Facebook | Twitter
+
+            <footer id="rodape">
+                <p>Copyright &copy; 2013 - by João Santos <br>
+                <a href="https://www.facebook.com/cursoemvideo" target="_blank">Facebook</a> | <a href="https://www.twitter.com/cursoemvideo" target="_blank">Twitter</a></p>
+            </footer>
+        </div>    
+    </body>
+</html>
